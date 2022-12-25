@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "galileo",
+  "version": "${version}",
+  "name": "Galileo",
+  "description": "Hack client targeted to LiveOverflow's server",
+  "authors": [
+    "Zuperito"
+  ],
+  "contact": {
+    "website": "zuperito.xyz"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/galileo/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "xyz.zuperito.galileo.client.GalileoClient"
+    ],
+    "main": [
+      "xyz.zuperito.galileo.Galileo"
+    ]
+  },
+  "mixins": [
+    "galileo.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
