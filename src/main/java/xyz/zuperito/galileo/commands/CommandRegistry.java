@@ -7,9 +7,12 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CommandRegistry {
-    private static final List<Command> commands = Util.make(new ArrayList<>(), CommandRegistry::init_commands);
+    private static final List<Command> commands = Util.make(
+            new ArrayList<>(), CommandRegistry::init_commands
+    );
     private static void init_commands(List<Command> commands) {
         commands.add(new PingCommand());
+        commands.add(new ModuleCommand());
     }
 
     public static List<Command> getCommands() {
