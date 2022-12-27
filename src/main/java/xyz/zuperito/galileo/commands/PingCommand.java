@@ -2,6 +2,7 @@ package xyz.zuperito.galileo.commands;
 
 import net.minecraft.text.Text;
 import xyz.zuperito.galileo.Galileo;
+import xyz.zuperito.galileo.utils.MessageHandler;
 
 public class PingCommand extends Command {
     public PingCommand() {
@@ -10,8 +11,8 @@ public class PingCommand extends Command {
 
     @Override
     public void execute(String[] args) {
-        Galileo.CLIENT.player.sendMessage(Text.of(
-                "[Galileo] Pong!"
+        MessageHandler.sendMessage(Text.of(
+                "Pong!"
         ));
     }
 }

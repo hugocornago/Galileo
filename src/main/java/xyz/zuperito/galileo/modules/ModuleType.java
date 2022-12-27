@@ -1,7 +1,8 @@
 package xyz.zuperito.galileo.modules;
 
 public enum ModuleType {
-    TEST("Testing");
+    TEST("Testing"),
+    PLAYER("categories.player");
     final String name;
     ModuleType(String name) {
         this.name = name;
